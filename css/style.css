@@ -8,7 +8,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 body{
 	background: rgb(214, 218, 194);
 }
+h1{
+	font-size:1.5rem;
+}
 header{
+	margin-top:10%;
 	text-align: center;
 }
 main{
@@ -18,16 +22,55 @@ main{
 	margin:auto;
 	text-align: center;
 }
+.scoreboard{
+	margin:2% auto;
+}
 input,button{
-	font-size:2rem;
+	font-size:1.5rem;
 }
 input{
 	background: rgba(255, 255, 255, 0.5);
 	border:none;
+	border-bottom:2px solid  rgb(212, 191, 109);
 }
 input:focus{
 	outline:none;
 }
 button{
 	background: rgba(255, 255, 255, 0.5);
+	border:none;
 }
+button:hover{
+	background: goldenrod;
+}
+.output{
+	margin:5% auto;
+}
+#stage{
+	width:300px;
+	margin:auto;
+	position:relative;
+}
+
+#scale
+{
+ width: 300px;
+ height: 33px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ background-image: url(../assets/scale.png);
+}
+#arrow
+{
+ width: 17px;
+ height: 22px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ background-image: url(../assets/arrow.png);
+ /*Transition*/
+ -webkit-transition: left 0.5s ease-out 0s;
+ -moz-transition: left 0.5s ease-out 0s;
+ transition: left 0.5s ease-out 0s;
+} 
