@@ -38,6 +38,10 @@ function playGame(){
 		scoreboard.innerHTML = gameState;
 		output.innerHTML = "Pick a smaller number -_-";
 	}
+	else if(guess < 0) {
+		scoreboard.innerHTML = gameState;
+		output.innerHTML = "Pick a bigger number! :@";
+	}
 	else if (guess == answer) {
 		gameWon = true;
 		output.style.color = "forestgreen";
@@ -83,6 +87,9 @@ function endGame(){
 var arrow = document.querySelector("#arrow"); 
 function render(){
 	if (guess > 100) {
+	}
+	else if (guess < 1){
+
 	}
 	else{
 		arrow.style.left = guess * 3 + "px";
